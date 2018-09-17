@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/x50"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:orientation="horizontal"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/x10"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="当前位置1"
+                android:background="@null"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/id_setting_edit_text_p1"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="518"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/x10"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="当前位置2"
+                android:background="@null"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/id_setting_edit_text_p2"
+                android:textColor="@android:color/holo_orange_light"
+                android:text="518"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:layout_marginStart="@dimen/x10"
+            android:text="校准"
+            android:textSize="16sp"
+            android:id="@+id/id_setting_button_check"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@android:color/black"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/x30"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/id_setting_recycler_view">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/y25"
+        android:layout_marginBottom="@dimen/y25"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:layout_marginStart="@dimen/x10"
+            android:text="读取货道数据"
+            android:textSize="16sp"
+            android:id="@+id/id_setting_button_read"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:layout_marginStart="@dimen/x10"
+            android:text="一键设置货道"
+            android:textSize="16sp"
+            android:id="@+id/id_setting_button_setting"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_button"
+            android:layout_marginStart="@dimen/x10"
+            android:text="增加货道"
+            android:textSize="16sp"
+            android:id="@+id/id_setting_button_add"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

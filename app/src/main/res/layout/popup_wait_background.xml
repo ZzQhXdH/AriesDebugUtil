@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y800"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="@dimen/x500"
+            android:layout_height="@dimen/y500"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:indicatorColor="@android:color/darker_gray"
+            android:layout_gravity="center"
+            android:id="@+id/id_popup_wait_loading"/>
+
+        <Button
+            android:layout_marginTop="@dimen/y80"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y150"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="@string/popup_wait_button"
+            android:id="@+id/id_popup_wait_button" />
+
+    </LinearLayout>
+
+</FrameLayout>

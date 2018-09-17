@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/id_main_recycler_view"
+        android:layout_marginStart="@dimen/x20"
+        android:layout_marginEnd="@dimen/x20"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y150"
+        android:layout_marginStart="@dimen/x200"
+        android:layout_marginEnd="@dimen/x200"
+        android:layout_marginTop="@dimen/y50"
+        android:layout_marginBottom="@dimen/y50"
+        android:background="@drawable/ripple_button"
+        android:id="@+id/id_main_scan_button"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:text="@string/main_button" />
+
+</LinearLayout>

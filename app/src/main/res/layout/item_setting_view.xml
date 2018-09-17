@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y120"
+    android:id="@+id/id_item_setting_linear_layout"
+    android:orientation="horizontal">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/x80"
+        android:layout_weight="1"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/id_setting_item_edit_text_goods_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="货道"
+            android:inputType="number"
+            android:text="1-1"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/x10"
+        android:layout_weight="1"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/id_setting_item_edit_text_position"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="位置"
+            android:inputType="number"
+            android:text="(518,518)"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="14sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/id_setting_item_button_setting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/x10"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_item_button_background"
+        android:text="调整"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/id_setting_item_button_test"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/x10"
+        android:layout_weight="1"
+        android:background="@drawable/ripple_item_button_background"
+        android:text="测试"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

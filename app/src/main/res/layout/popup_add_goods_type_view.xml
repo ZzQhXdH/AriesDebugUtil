@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y700"
+        android:layout_gravity="center"
+        android:padding="@dimen/x50"
+        android:background="@drawable/shape_add_goods_type"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x25"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:background="@drawable/shape_rounded"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/x25"
+                android:text="行:"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/x50"
+                android:id="@+id/id_popup_add_edit_text_row"
+                android:hint="请输入行"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:background="@drawable/shape_rounded"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/x25"
+                android:text="列:"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/x50"
+                android:id="@+id/id_popup_add_edit_text_col"
+                android:hint="请输入列"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x50"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/id_popup_add_button_cancel"
+                android:text="取消"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_button"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/id_popup_add_button_ok"
+                android:text="确定"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

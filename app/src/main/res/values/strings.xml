@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">白羊座调试助手</string>
+
+    <string name="main_button">扫描</string>
+    <string name="popup_wait_button">停止</string>
+    <string name="menu_title_debug">调试</string>
+    <string name="menu_title_setting">设置</string>
+    <string name="menu_title_status">状态</string>
+
+    <string name="debug_door_switch">门禁开关</string>
+    <string name="debug_fridge_open">冰箱打开</string>
+    <string name="debug_fridge_close">冰箱关闭</string>
+    <string name="debug_pick_motor">升降电机</string>
+    <string name="debug_compressor">空压机</string>
+
+</resources>
